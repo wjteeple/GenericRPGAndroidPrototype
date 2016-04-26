@@ -6,6 +6,7 @@ import com.greenwolfinc.game.GenericRPG;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
+		System.setProperty("org.lwjgl.opengl.Display.allowSoftwareOpenGL", "true");
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width = GenericRPG.WIDTH;
 		config.height = GenericRPG.HEIGHT;
